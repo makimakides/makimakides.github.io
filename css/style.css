@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 10px;
+    z-index: 1;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #DAE6F2;
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+}
+#menu    {
+    height: 100vh;
+    background-color: brown; 
+    margin-top: 100vh;
+    position: relative;
+    display: block;
+    overflow-y: hidden;
+    z-index: 2;
+}
+#coumiem    {
+    height: 100vh;
+    background-color: red; 
+    position: relative;
+    z-index: 3;
+}
+.grafika{
+    height: 100vh;
+    width: 33vw;
+    left: 33%;
+    background-color: white; 
+    position: absolute;
+    z-index: 3;
+}
+.jezyki{
+    height: 100vh;
+    width: 34vw;
+    left: 66%;
+    background-color: mediumvioletred; 
+    position: absolute;
+    z-index: 3;
+}
+
+#galaria    {
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    z-index: 4;
+}
+#oferta    {
+    height: 100vh;
+    background-color: green; 
+    position: relative;
+    z-index: 5;
+}
+#social    {
+    height: 100vh;
+    background-color: yellow; 
+    position: relative;
+    z-index: 6;
+}
+#pw    {
+    height: 100vh;
+    background-color: gray; 
+    position: relative;
+    z-index: 7;
+}
+header img  {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    height: 80%;
+    top: 25%;
+    z-index: 0;
+}
+
+header nav {
+    position: absolute;
+    right: 8%;
+    top: 3%;
+    font-size: 3rem;
+}
+
+header hgroup   {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    text-transform: uppercase;
+    z-index: 1;
+}
+header h1   {
+    font-size: 4rem;
+}
+header h3 {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+#arrow {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #a3acb5;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #a3acb5;
+    text-shadow: 0px -12px 0 #a3acb5, 0 -24px 0 #a3acb5;
+    overflow: hidden;
+    transform: 1s ease;
+}
+.fa-angle-down {
+    animation: arrow 2.1s infinite linear;
+}
+#arrow:hover{
+     text-shadow: 0px -12px 0 #a3acb5, 0 -24px 0 #a3acb5;
+    color: #a3acb5;
+    cursor: pointer;
+     width:64px;
+    height: 64px;
+    font-size: 3.2rem;
+}
+
+@media (orientation: portrait) {
+    h3 span::after {
+    content: "\A";
+    white-space: pre;
+    }
+}
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        right: 15%;
+        top: 25%;
+    }
+    header hgroup {
+        left: 7%;
+        top: 10%;
+    }
+    header nav {
+    font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 600px){
+    header hgroup {
+        top:15%;
+    }
+    header h1 {
+        font-size: 3.3rem;
+    }
+    header h3{
+        font-size: 2.4rem;
+    }
+    #coumiem    {
+    overflow-x: scroll;
+    transform: translate(2s);
+}
+    
+    .grafika{
+    height: 100vh;
+    width: 100vw;
+    left: 100%;
+    background-color: white; 
+    position: absolute;
+    z-index: 3;
+        transform: translate(2s);
+}
+    .jezyki{
+    height: 100vh;
+    width: 100vw;
+    left: 200%;
+    background-color: mediumvioletred; 
+    position: absolute;
+    z-index: 3;
+
+    }
+ 
+}
+
+
+@keyframes arrow {
+    0%{
+        transform: translateY(-80px)
+    }
+    50%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(80px)
+    }
+}
