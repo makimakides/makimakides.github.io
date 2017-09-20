@@ -170,6 +170,7 @@ header h3 {
     }
     #coumiem    {
     overflow-x: auto;
+        overflow-y: hidden;
     transform: translate(2s);
 }
     
